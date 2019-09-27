@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+<title>django home</title>
+</head>
+<body>
+  Welcome to the 'Django'
+  <br>
+  <form action="{% url 'count' %}">
+    <textarea name="fulltext" rows="8" cols="80"></textarea>
+    <br />
+    <input type="submit" value="count" />
+  </form>
+</body>
+</html>

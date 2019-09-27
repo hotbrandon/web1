@@ -1,0 +1,16 @@
+<html>
+<body>
+  <h2>word count result</h2>
+  <a href="{% url 'home' %}">back to home</a>
+  <br>
+  your text:<br>
+  {{ fulltext }}
+<p>there are  {{ count }} words in your text</p>
+<p>
+{% for w, c in mydict %}
+{{ w }} : {{ c }}
+<br />
+{% endfor %}
+</p>
+</body>
+</html>
